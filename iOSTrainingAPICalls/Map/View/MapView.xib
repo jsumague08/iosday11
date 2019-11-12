@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Czh-6R-Iej" customClass="MapView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvo-uR-f69" customClass="GMSMapView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SwH-VO-VNC" firstAttribute="bottom" secondItem="pvo-uR-f69" secondAttribute="bottom" id="6XJ-VK-HzB"/>
+                <constraint firstItem="SwH-VO-VNC" firstAttribute="trailing" secondItem="pvo-uR-f69" secondAttribute="trailing" id="U2i-A4-AKe"/>
+                <constraint firstItem="pvo-uR-f69" firstAttribute="top" secondItem="SwH-VO-VNC" secondAttribute="top" id="uPn-Vs-9Ud"/>
+                <constraint firstItem="pvo-uR-f69" firstAttribute="leading" secondItem="SwH-VO-VNC" secondAttribute="leading" id="xKR-vV-eyr"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SwH-VO-VNC"/>
+            <connections>
+                <outlet property="mapView" destination="pvo-uR-f69" id="8hI-3i-GW4"/>
+            </connections>
+            <point key="canvasLocation" x="-201.44927536231884" y="-201.5625"/>
+        </view>
+    </objects>
+</document>
