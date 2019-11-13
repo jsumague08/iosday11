@@ -88,7 +88,6 @@ const float zoom = 15.0f;
         
         if (isFirstLocation) {
             [self setCameraForFirstRestaurant:restaurant.latitude withLongitude:restaurant.longitude];
-        
             isFirstLocation = NO;
         }
         

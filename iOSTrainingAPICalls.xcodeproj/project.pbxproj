@@ -13,6 +13,21 @@
 		5B09F1B92379455300A5646E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B09F1B82379455300A5646E /* MapViewController.m */; };
 		5B09F1BD2379457900A5646E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B09F1BC2379457900A5646E /* MapView.xib */; };
 		5B09F1BF237949C200A5646E /* MapStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B09F1BE237949C200A5646E /* MapStoryBoard.storyboard */; };
+		5B0DBFBF237A587200384691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFBE237A587200384691 /* GoogleService-Info.plist */; };
+		5B0DBFD3237A80F300384691 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD2237A80F300384691 /* LoginView.m */; };
+		5B0DBFD5237A810D00384691 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD4237A810D00384691 /* LoginView.xib */; };
+		5B0DBFD8237A851000384691 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD7237A851000384691 /* LoginViewController.m */; };
+		5B0DBFDA237A85E300384691 /* ChatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD9237A85E300384691 /* ChatStoryboard.storyboard */; };
+		5B0DBFDC237A895000384691 /* TabViewStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFDB237A895000384691 /* TabViewStoryboard.storyboard */; };
+		5B0DBFE1237A932800384691 /* AppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFE0237A932800384691 /* AppSettings.m */; };
+		5B0DBFE5237AA2F700384691 /* ChannelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFE4237AA2F700384691 /* ChannelView.m */; };
+		5B0DBFE7237AA32B00384691 /* ChannelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFE6237AA32B00384691 /* ChannelView.xib */; };
+		5B0DBFEA237AA45400384691 /* ChannelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFE9237AA45400384691 /* ChannelViewController.m */; };
+		5B0DBFEE237B9CC700384691 /* Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFED237B9CC700384691 /* Channel.m */; };
+		5B0DBFF2237BD74400384691 /* ChannelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFF1237BD74400384691 /* ChannelTableViewCell.xib */; };
+		5B0DBFF5237BD75C00384691 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFF4237BD75C00384691 /* ChannelTableViewCell.m */; };
+		5B0DBFFD237BE4B500384691 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFFC237BE4B500384691 /* Message.m */; };
+		5B0DC001237BE93A00384691 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DC000237BE93A00384691 /* MessageViewController.m */; };
 		6227F588C89F5FDF272DAB8D /* Pods_iOSTrainingAPICalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D25CC8F6F802528A947D4 /* Pods_iOSTrainingAPICalls.framework */; };
 		A7046E67237518AF0016B2C4 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7046E66237518AF0016B2C4 /* HomeView.m */; };
 		A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7046E69237518D00016B2C4 /* HomeView.xib */; };
@@ -68,6 +83,32 @@
 		5B09F1B82379455300A5646E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		5B09F1BC2379457900A5646E /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		5B09F1BE237949C200A5646E /* MapStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapStoryBoard.storyboard; sourceTree = "<group>"; };
+		5B0DBFBE237A587200384691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B0DBFC0237A5DCB00384691 /* iOSTrainingAPICalls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSTrainingAPICalls.entitlements; sourceTree = "<group>"; };
+		5B0DBFD1237A80F300384691 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		5B0DBFD2237A80F300384691 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		5B0DBFD4237A810D00384691 /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		5B0DBFD6237A851000384691 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		5B0DBFD7237A851000384691 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		5B0DBFD9237A85E300384691 /* ChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatStoryboard.storyboard; sourceTree = "<group>"; };
+		5B0DBFDB237A895000384691 /* TabViewStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabViewStoryboard.storyboard; sourceTree = "<group>"; };
+		5B0DBFE0237A932800384691 /* AppSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppSettings.m; sourceTree = "<group>"; };
+		5B0DBFE3237AA2F700384691 /* ChannelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelView.h; sourceTree = "<group>"; };
+		5B0DBFE4237AA2F700384691 /* ChannelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelView.m; sourceTree = "<group>"; };
+		5B0DBFE6237AA32B00384691 /* ChannelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelView.xib; sourceTree = "<group>"; };
+		5B0DBFE8237AA45400384691 /* ChannelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelViewController.h; sourceTree = "<group>"; };
+		5B0DBFE9237AA45400384691 /* ChannelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelViewController.m; sourceTree = "<group>"; };
+		5B0DBFEB237AA90F00384691 /* AppSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSettings.h; sourceTree = "<group>"; };
+		5B0DBFEC237B9CC700384691 /* Channel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Channel.h; sourceTree = "<group>"; };
+		5B0DBFED237B9CC700384691 /* Channel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Channel.m; sourceTree = "<group>"; };
+		5B0DBFF0237BA69300384691 /* DatabasePresentation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DatabasePresentation.h; sourceTree = "<group>"; };
+		5B0DBFF1237BD74400384691 /* ChannelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelTableViewCell.xib; sourceTree = "<group>"; };
+		5B0DBFF3237BD75C00384691 /* ChannelTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChannelTableViewCell.h; sourceTree = "<group>"; };
+		5B0DBFF4237BD75C00384691 /* ChannelTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChannelTableViewCell.m; sourceTree = "<group>"; };
+		5B0DBFFB237BE4B500384691 /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		5B0DBFFC237BE4B500384691 /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		5B0DBFFF237BE93A00384691 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		5B0DC000237BE93A00384691 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		A7046E65237518AF0016B2C4 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		A7046E66237518AF0016B2C4 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		A7046E69237518D00016B2C4 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -187,6 +228,159 @@
 				5B09F1BE237949C200A5646E /* MapStoryBoard.storyboard */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B0DBFC4237A7D4B00384691 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				A7F678CB237515A000425CC7 /* Main.storyboard */,
+				5B09F1AD237941CA00A5646E /* Map */,
+				A7046E61237518700016B2C4 /* Home */,
+				A7046E77237671B80016B2C4 /* Restaurants */,
+				A7046E912376A8750016B2C4 /* RestaurantDetails */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		5B0DBFC5237A7D7900384691 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFF6237BE42200384691 /* Message */,
+				5B0DBFC8237A7ECB00384691 /* Channel */,
+				5B0DBFC7237A7EC300384691 /* Login */,
+				5B0DBFD9237A85E300384691 /* ChatStoryboard.storyboard */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		5B0DBFC7237A7EC300384691 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFCB237A7EF500384691 /* Controllers */,
+				5B0DBFCA237A7EF000384691 /* Views */,
+				5B0DBFC9237A7ED300384691 /* Models */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5B0DBFC8237A7ECB00384691 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFCC237A7EFD00384691 /* Models */,
+				5B0DBFCD237A7F0F00384691 /* Views */,
+				5B0DBFCE237A7F1500384691 /* Controllers */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		5B0DBFC9237A7ED300384691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B0DBFCA237A7EF000384691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFD1237A80F300384691 /* LoginView.h */,
+				5B0DBFD2237A80F300384691 /* LoginView.m */,
+				5B0DBFD4237A810D00384691 /* LoginView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0DBFCB237A7EF500384691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFD6237A851000384691 /* LoginViewController.h */,
+				5B0DBFD7237A851000384691 /* LoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B0DBFCC237A7EFD00384691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFEC237B9CC700384691 /* Channel.h */,
+				5B0DBFED237B9CC700384691 /* Channel.m */,
+				5B0DBFF0237BA69300384691 /* DatabasePresentation.h */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5B0DBFCD237A7F0F00384691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFE3237AA2F700384691 /* ChannelView.h */,
+				5B0DBFE4237AA2F700384691 /* ChannelView.m */,
+				5B0DBFE6237AA32B00384691 /* ChannelView.xib */,
+				5B0DBFEF237BA03E00384691 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0DBFCE237A7F1500384691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFE8237AA45400384691 /* ChannelViewController.h */,
+				5B0DBFE9237AA45400384691 /* ChannelViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B0DBFDD237A91DE00384691 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFEB237AA90F00384691 /* AppSettings.h */,
+				5B0DBFE0237A932800384691 /* AppSettings.m */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5B0DBFEF237BA03E00384691 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFF1237BD74400384691 /* ChannelTableViewCell.xib */,
+				5B0DBFF3237BD75C00384691 /* ChannelTableViewCell.h */,
+				5B0DBFF4237BD75C00384691 /* ChannelTableViewCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5B0DBFF6237BE42200384691 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFF9237BE44700384691 /* Models */,
+				5B0DBFF8237BE44000384691 /* Views */,
+				5B0DBFF7237BE43700384691 /* Controllers */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		5B0DBFF7237BE43700384691 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFFF237BE93A00384691 /* MessageViewController.h */,
+				5B0DC000237BE93A00384691 /* MessageViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5B0DBFF8237BE44000384691 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B0DBFF9237BE44700384691 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5B0DBFFB237BE4B500384691 /* Message.h */,
+				5B0DBFFC237BE4B500384691 /* Message.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		66DEB08EFFB1126E58475D87 /* Pods */ = {
@@ -353,16 +547,17 @@
 		A7F678C4237515A000425CC7 /* iOSTrainingAPICalls */ = {
 			isa = PBXGroup;
 			children = (
-				5B09F1AD237941CA00A5646E /* Map */,
-				A7046E61237518700016B2C4 /* Home */,
-				A7046E77237671B80016B2C4 /* Restaurants */,
-				A7046E912376A8750016B2C4 /* RestaurantDetails */,
+				5B0DBFDD237A91DE00384691 /* Utility */,
+				5B0DBFC5237A7D7900384691 /* Chat */,
+				5B0DBFC4237A7D4B00384691 /* Restaurant */,
+				5B0DBFC0237A5DCB00384691 /* iOSTrainingAPICalls.entitlements */,
 				A7F678C5237515A000425CC7 /* AppDelegate.h */,
 				A7F678C6237515A000425CC7 /* AppDelegate.m */,
-				A7F678CB237515A000425CC7 /* Main.storyboard */,
 				A7F678D1237515A100425CC7 /* Assets.xcassets */,
+				5B0DBFDB237A895000384691 /* TabViewStoryboard.storyboard */,
 				A7F678D3237515A100425CC7 /* LaunchScreen.storyboard */,
 				A7F678D6237515A100425CC7 /* Info.plist */,
+				5B0DBFBE237A587200384691 /* GoogleService-Info.plist */,
 				A7F678D7237515A100425CC7 /* main.m */,
 				A7F678CE237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld */,
 			);
@@ -461,6 +656,11 @@
 				TargetAttributes = {
 					A7F678C1237515A000425CC7 = {
 						CreatedOnToolsVersion = 10.2;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					A7F678DC237515A100425CC7 = {
 						CreatedOnToolsVersion = 10.2;
@@ -497,15 +697,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0DBFE7237AA32B00384691 /* ChannelView.xib in Resources */,
 				5B09F1BD2379457900A5646E /* MapView.xib in Resources */,
 				A7F678D5237515A100425CC7 /* LaunchScreen.storyboard in Resources */,
+				5B0DBFD5237A810D00384691 /* LoginView.xib in Resources */,
 				A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */,
+				5B0DBFF2237BD74400384691 /* ChannelTableViewCell.xib in Resources */,
 				A7F678D2237515A100425CC7 /* Assets.xcassets in Resources */,
 				A7046E7323751AB00016B2C4 /* HomeTableViewCell.xib in Resources */,
 				A7046E9B2376A9D40016B2C4 /* RestaurantDetailsView.xib in Resources */,
+				5B0DBFDA237A85E300384691 /* ChatStoryboard.storyboard in Resources */,
 				A7F678CD237515A000425CC7 /* Main.storyboard in Resources */,
 				A7046E8D2376819B0016B2C4 /* RestaurantsView.xib in Resources */,
+				5B0DBFBF237A587200384691 /* GoogleService-Info.plist in Resources */,
 				5B09F1BF237949C200A5646E /* MapStoryBoard.storyboard in Resources */,
+				5B0DBFDC237A895000384691 /* TabViewStoryboard.storyboard in Resources */,
 				A7046E8B237673240016B2C4 /* RestaurantViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,16 +875,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7F678D0237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld in Sources */,
+				5B0DBFEE237B9CC700384691 /* Channel.m in Sources */,
 				A7046E802376729F0016B2C4 /* RestaurantsView.m in Sources */,
+				5B0DBFE1237A932800384691 /* AppSettings.m in Sources */,
 				A7046E7D2376723D0016B2C4 /* RestaurantsViewController.m in Sources */,
 				A7046E992376A9BA0016B2C4 /* RestaurantDetailsView.m in Sources */,
+				5B0DC001237BE93A00384691 /* MessageViewController.m in Sources */,
+				5B0DBFFD237BE4B500384691 /* Message.m in Sources */,
 				A7046E8A237673240016B2C4 /* RestaurantViewCell.m in Sources */,
+				5B0DBFEA237AA45400384691 /* ChannelViewController.m in Sources */,
 				A7046E67237518AF0016B2C4 /* HomeView.m in Sources */,
+				5B0DBFE5237AA2F700384691 /* ChannelView.m in Sources */,
 				A7046E76237530E10016B2C4 /* Categories.m in Sources */,
+				5B0DBFD8237A851000384691 /* LoginViewController.m in Sources */,
 				A7046E962376A92B0016B2C4 /* RestaurantDetailsViewController.m in Sources */,
 				A7046E7223751AB00016B2C4 /* HomeTableViewCell.m in Sources */,
 				A7F678D8237515A100425CC7 /* main.m in Sources */,
+				5B0DBFD3237A80F300384691 /* LoginView.m in Sources */,
 				A7046E90237684AA0016B2C4 /* Restaurants.m in Sources */,
+				5B0DBFF5237BD75C00384691 /* ChannelTableViewCell.m in Sources */,
 				5B09F1B62379453E00A5646E /* MapView.m in Sources */,
 				5B09F1B92379455300A5646E /* MapViewController.m in Sources */,
 				A7046E6D237518E50016B2C4 /* HomeViewController.m in Sources */,
@@ -854,7 +1069,9 @@
 			baseConfigurationReference = DA969FAB700478AFCE07175A /* Pods-iOSTrainingAPICalls.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOSTrainingAPICalls/iOSTrainingAPICalls.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S6N6TYG79;
 				INFOPLIST_FILE = iOSTrainingAPICalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -871,7 +1088,9 @@
 			baseConfigurationReference = 23EC4B48A1F9D7926509ABCB /* Pods-iOSTrainingAPICalls.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iOSTrainingAPICalls/iOSTrainingAPICalls.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2S6N6TYG79;
 				INFOPLIST_FILE = iOSTrainingAPICalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

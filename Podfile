@@ -6,9 +6,17 @@ target 'iOSTrainingAPICalls' do
   use_frameworks!
 
   # Pods for iOSTrainingAPICalls
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'Firebase/Storage'
+pod 'Firebase/Firestore'
     pod 'AFNetworking', '~> 3.0'
-pod 'GoogleMaps'
-pod 'GooglePlaces'
+	pod 'GoogleMaps'
+	pod 'GooglePlaces'
+	pod 'Firebase/Analytics'
+	pod 'JSQMessagesViewController', :git => 'https://github.com/FWAlex/JSQMessagesViewController.git'
+pod 
+
 
   target 'iOSTrainingAPICallsTests' do
     inherit! :search_paths
