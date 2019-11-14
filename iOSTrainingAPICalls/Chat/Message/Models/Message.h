@@ -14,7 +14,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Message : JSQMessage <DatabasePresentation>
-
+- (NSDictionary *)channelsDict;
 @end
 
 NS_ASSUME_NONNULL_END

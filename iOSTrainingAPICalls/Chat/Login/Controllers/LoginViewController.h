@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "../../Login/Views/LoginView.h"
+#import "../../Channel/Controllers/ChannelViewController.h"
 @import FirebaseAuth;
 
 NS_ASSUME_NONNULL_BEGIN

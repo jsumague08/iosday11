@@ -12,8 +12,6 @@
 		5B09F1B62379453E00A5646E /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B09F1B52379453E00A5646E /* MapView.m */; };
 		5B09F1B92379455300A5646E /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B09F1B82379455300A5646E /* MapViewController.m */; };
 		5B09F1BD2379457900A5646E /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B09F1BC2379457900A5646E /* MapView.xib */; };
-		5B09F1BF237949C200A5646E /* MapStoryBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B09F1BE237949C200A5646E /* MapStoryBoard.storyboard */; };
-		5B0DBFBF237A587200384691 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFBE237A587200384691 /* GoogleService-Info.plist */; };
 		5B0DBFD3237A80F300384691 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD2237A80F300384691 /* LoginView.m */; };
 		5B0DBFD5237A810D00384691 /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD4237A810D00384691 /* LoginView.xib */; };
 		5B0DBFD8237A851000384691 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFD7237A851000384691 /* LoginViewController.m */; };
@@ -28,6 +26,10 @@
 		5B0DBFF5237BD75C00384691 /* ChannelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFF4237BD75C00384691 /* ChannelTableViewCell.m */; };
 		5B0DBFFD237BE4B500384691 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DBFFC237BE4B500384691 /* Message.m */; };
 		5B0DC001237BE93A00384691 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B0DC000237BE93A00384691 /* MessageViewController.m */; };
+		5BCE26FC237C34D40012FE78 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BCE26FB237C34D40012FE78 /* GoogleService-Info.plist */; };
+		5BCE2703237C3C1C0012FE78 /* MapPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE2702237C3C1C0012FE78 /* MapPopOverViewController.m */; };
+		5BCE2706237C3C330012FE78 /* MapPopOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE2705237C3C330012FE78 /* MapPopOver.m */; };
+		5BCE2708237C3C3C0012FE78 /* MapPopOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BCE2707237C3C3C0012FE78 /* MapPopOver.xib */; };
 		6227F588C89F5FDF272DAB8D /* Pods_iOSTrainingAPICalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D25CC8F6F802528A947D4 /* Pods_iOSTrainingAPICalls.framework */; };
 		A7046E67237518AF0016B2C4 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7046E66237518AF0016B2C4 /* HomeView.m */; };
 		A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7046E69237518D00016B2C4 /* HomeView.xib */; };
@@ -82,8 +84,6 @@
 		5B09F1B72379455300A5646E /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		5B09F1B82379455300A5646E /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		5B09F1BC2379457900A5646E /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
-		5B09F1BE237949C200A5646E /* MapStoryBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapStoryBoard.storyboard; sourceTree = "<group>"; };
-		5B0DBFBE237A587200384691 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B0DBFC0237A5DCB00384691 /* iOSTrainingAPICalls.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iOSTrainingAPICalls.entitlements; sourceTree = "<group>"; };
 		5B0DBFD1237A80F300384691 /* LoginView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		5B0DBFD2237A80F300384691 /* LoginView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
@@ -109,6 +109,12 @@
 		5B0DBFFC237BE4B500384691 /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
 		5B0DBFFF237BE93A00384691 /* MessageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		5B0DC000237BE93A00384691 /* MessageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		5BCE26FB237C34D40012FE78 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BCE2701237C3C1C0012FE78 /* MapPopOverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPopOverViewController.h; sourceTree = "<group>"; };
+		5BCE2702237C3C1C0012FE78 /* MapPopOverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPopOverViewController.m; sourceTree = "<group>"; };
+		5BCE2704237C3C330012FE78 /* MapPopOver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPopOver.h; sourceTree = "<group>"; };
+		5BCE2705237C3C330012FE78 /* MapPopOver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPopOver.m; sourceTree = "<group>"; };
+		5BCE2707237C3C3C0012FE78 /* MapPopOver.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapPopOver.xib; sourceTree = "<group>"; };
 		A7046E65237518AF0016B2C4 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		A7046E66237518AF0016B2C4 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		A7046E69237518D00016B2C4 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -225,7 +231,6 @@
 			children = (
 				5B09F1B72379455300A5646E /* MapViewController.h */,
 				5B09F1B82379455300A5646E /* MapViewController.m */,
-				5B09F1BE237949C200A5646E /* MapStoryBoard.storyboard */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -233,7 +238,7 @@
 		5B0DBFC4237A7D4B00384691 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
-				A7F678CB237515A000425CC7 /* Main.storyboard */,
+				5BCE26FD237C3B970012FE78 /* MapPopover */,
 				5B09F1AD237941CA00A5646E /* Map */,
 				A7046E61237518700016B2C4 /* Home */,
 				A7046E77237671B80016B2C4 /* Restaurants */,
@@ -381,6 +386,43 @@
 				5B0DBFFC237BE4B500384691 /* Message.m */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5BCE26FD237C3B970012FE78 /* MapPopover */ = {
+			isa = PBXGroup;
+			children = (
+				A7F678CB237515A000425CC7 /* Main.storyboard */,
+				5BCE2700237C3BB30012FE78 /* Model */,
+				5BCE26FF237C3BAE0012FE78 /* View */,
+				5BCE26FE237C3BA60012FE78 /* Controller */,
+			);
+			path = MapPopover;
+			sourceTree = "<group>";
+		};
+		5BCE26FE237C3BA60012FE78 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BCE2701237C3C1C0012FE78 /* MapPopOverViewController.h */,
+				5BCE2702237C3C1C0012FE78 /* MapPopOverViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BCE26FF237C3BAE0012FE78 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5BCE2704237C3C330012FE78 /* MapPopOver.h */,
+				5BCE2705237C3C330012FE78 /* MapPopOver.m */,
+				5BCE2707237C3C3C0012FE78 /* MapPopOver.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5BCE2700237C3BB30012FE78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		66DEB08EFFB1126E58475D87 /* Pods */ = {
@@ -557,7 +599,7 @@
 				5B0DBFDB237A895000384691 /* TabViewStoryboard.storyboard */,
 				A7F678D3237515A100425CC7 /* LaunchScreen.storyboard */,
 				A7F678D6237515A100425CC7 /* Info.plist */,
-				5B0DBFBE237A587200384691 /* GoogleService-Info.plist */,
+				5BCE26FB237C34D40012FE78 /* GoogleService-Info.plist */,
 				A7F678D7237515A100425CC7 /* main.m */,
 				A7F678CE237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld */,
 			);
@@ -706,11 +748,11 @@
 				A7F678D2237515A100425CC7 /* Assets.xcassets in Resources */,
 				A7046E7323751AB00016B2C4 /* HomeTableViewCell.xib in Resources */,
 				A7046E9B2376A9D40016B2C4 /* RestaurantDetailsView.xib in Resources */,
+				5BCE2708237C3C3C0012FE78 /* MapPopOver.xib in Resources */,
+				5BCE26FC237C34D40012FE78 /* GoogleService-Info.plist in Resources */,
 				5B0DBFDA237A85E300384691 /* ChatStoryboard.storyboard in Resources */,
 				A7F678CD237515A000425CC7 /* Main.storyboard in Resources */,
 				A7046E8D2376819B0016B2C4 /* RestaurantsView.xib in Resources */,
-				5B0DBFBF237A587200384691 /* GoogleService-Info.plist in Resources */,
-				5B09F1BF237949C200A5646E /* MapStoryBoard.storyboard in Resources */,
 				5B0DBFDC237A895000384691 /* TabViewStoryboard.storyboard in Resources */,
 				A7046E8B237673240016B2C4 /* RestaurantViewCell.xib in Resources */,
 			);
@@ -882,6 +924,7 @@
 				A7046E992376A9BA0016B2C4 /* RestaurantDetailsView.m in Sources */,
 				5B0DC001237BE93A00384691 /* MessageViewController.m in Sources */,
 				5B0DBFFD237BE4B500384691 /* Message.m in Sources */,
+				5BCE2706237C3C330012FE78 /* MapPopOver.m in Sources */,
 				A7046E8A237673240016B2C4 /* RestaurantViewCell.m in Sources */,
 				5B0DBFEA237AA45400384691 /* ChannelViewController.m in Sources */,
 				A7046E67237518AF0016B2C4 /* HomeView.m in Sources */,
@@ -891,6 +934,7 @@
 				A7046E962376A92B0016B2C4 /* RestaurantDetailsViewController.m in Sources */,
 				A7046E7223751AB00016B2C4 /* HomeTableViewCell.m in Sources */,
 				A7F678D8237515A100425CC7 /* main.m in Sources */,
+				5BCE2703237C3C1C0012FE78 /* MapPopOverViewController.m in Sources */,
 				5B0DBFD3237A80F300384691 /* LoginView.m in Sources */,
 				A7046E90237684AA0016B2C4 /* Restaurants.m in Sources */,
 				5B0DBFF5237BD75C00384691 /* ChannelTableViewCell.m in Sources */,
@@ -1077,7 +1121,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.opsolutions.iOSTrainingAPICalls;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmjy.NotifTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1096,7 +1140,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.opsolutions.iOSTrainingAPICalls;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zmjy.NotifTutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

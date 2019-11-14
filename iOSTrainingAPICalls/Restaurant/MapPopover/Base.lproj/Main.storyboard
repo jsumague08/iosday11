@@ -59,7 +59,7 @@
                     <navigationItem key="navigationItem" title="Title" id="0U5-wp-x4r">
                         <barButtonItem key="rightBarButtonItem" title="View Map" id="gOG-6L-RZD">
                             <connections>
-                                <segue destination="qrN-AM-v8U" kind="show" identifier="collectionToMap" id="8hx-N3-aCB"/>
+                                <segue destination="fah-mW-ZzP" kind="show" identifier="collectionToMap" id="2XD-J9-peT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -72,13 +72,39 @@
             </objects>
             <point key="canvasLocation" x="905" y="81"/>
         </scene>
-        <!--MapStoryBoard-->
-        <scene sceneID="j9Q-AZ-yAv">
+        <!--Map View Controller-->
+        <scene sceneID="F3b-tS-rzz">
             <objects>
-                <viewControllerPlaceholder storyboardName="MapStoryBoard" id="qrN-AM-v8U" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qUo-8D-slf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="fah-mW-ZzP" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y9f-wC-tlp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7ly-vJ-Lfh"/>
+                    </view>
+                    <connections>
+                        <segue destination="MP2-JJ-kZ2" kind="presentation" identifier="showPopOver" id="Iut-qp-PJG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bzO-qy-qC1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1530" y="-372"/>
+            <point key="canvasLocation" x="1433" y="-981"/>
+        </scene>
+        <!--Map Pop Over View Controller-->
+        <scene sceneID="1LW-pX-mVF">
+            <objects>
+                <viewController id="MP2-JJ-kZ2" customClass="MapPopOverViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="center" id="PeO-WN-1tU">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="250"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Z5o-Lg-6iO"/>
+                    </view>
+                    <size key="freeformSize" width="350" height="250"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BOl-Gq-Wex" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="-982"/>
         </scene>
         <!--Restaurant Details View Controller-->
         <scene sceneID="a19-w4-z1U">

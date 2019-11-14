@@ -142,6 +142,9 @@
 
 - (void)handleDocumentChange:(FIRDocumentChange *)change {
     Channel *channel = [Channel initWithDocument:change.document];
+    if (channel == nil) {
+        return;
+    }
     switch (change.type) {
         case FIRDocumentChangeTypeAdded:
             [self addChannelToTable:channel];
@@ -190,8 +193,15 @@
     if (channel == nil) {
         return;
     }
-    MessageViewController *vc = [MessageViewController initWithChannel:channel];
-    
+    MessageViewController *vc = [MessageViewController initWithChannel:channel withUser:self.user];
+    if ([self navigationController] != nil) {
+        [[self navigationController] showViewController:vc sender:nil];
+    }
+    else {
+        [self presentViewController:vc animated:YES completion:nil];
+    }
 }
+
+
 
 @end

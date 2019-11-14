@@ -12,6 +12,7 @@
 #import "../../Message/Controllers/MessageViewController.h"
 
 @import FirebaseFirestore;
+@import FirebaseAuth;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (strong, nonatomic) ChannelView *channelView;
 @property (strong, nonatomic) ChannelTableViewCell *channelTableViewCell;
+@property (strong, nonatomic) FIRUser *user;
 
 //@property (strong, nonatomic)
 

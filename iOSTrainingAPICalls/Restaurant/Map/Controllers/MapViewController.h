@@ -10,15 +10,20 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "../View/MapView.h"
 #import "../../Restaurants/Models/Restaurants.h"
+#import "../../MapPopover/View/MapPopOver.h"
+#import "../../MapPopover/Controller/MapPopOverViewController.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MapViewController : UIViewController <CLLocationManagerDelegate>
+@interface MapViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) GMSMarkerLayer *marker;
+
 @property (strong, nonatomic) MapView *mapView;
 @property (strong, nonatomic) NSMutableArray *arrayOfRestaurants;
-- (IBAction)backNavigationButtonPressed:(id)sender;
+@property (strong, nonatomic) MapPopOver *popOver;
 
 
 @end

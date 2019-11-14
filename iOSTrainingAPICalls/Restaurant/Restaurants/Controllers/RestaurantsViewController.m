@@ -87,7 +87,7 @@
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
     dispatch_async(queue, ^{
         NSURL *url = [NSURL URLWithString:restaurant.restaurantThumb];
-        NSData * imageData = [NSData dataWithContentsOfURL: url];
+        NSData *imageData = [NSData dataWithContentsOfURL: url];
         if ([restaurant.restaurantThumb isEqualToString:@""]) {
             UIImage *image = [UIImage imageNamed:@"ic_no_image"];
             cell.restaurantImageView.image = image;
@@ -134,8 +134,7 @@
     }
     
     if ([segue.identifier isEqualToString:@"collectionToMap"]) {
-        UINavigationController *navigationController = [segue destinationViewController];
-        MapViewController *mapViewController = navigationController.viewControllers[0];
+        MapViewController *mapViewController = [segue destinationViewController];
         mapViewController.arrayOfRestaurants = self.restaurants;
     }
 }

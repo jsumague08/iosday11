@@ -8,6 +8,7 @@
 
 #ifndef AppSettings_h
 #define AppSettings_h
+@import FirebaseAuth;
 
 @interface AppSettings : NSObject
 

@@ -14,15 +14,16 @@ const float zoom = 15.0f;
 @interface MapViewController ()
 
 @end
-//my copy
+
 @implementation MapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.mapView = (MapView *)[[[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil] objectAtIndex:0];
-    
     self.mapView.frame = self.view.bounds;
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
+    
+    
     [self.view addSubview:self.mapView];
     
     [self checkLocationAccess];
@@ -32,6 +33,7 @@ const float zoom = 15.0f;
 
 - (void)startLocationService {
     if (_locationManager == nil) {
+        self.mapView.delegate = self;
         _locationManager = [[CLLocationManager alloc] init];
         _locationManager.delegate = self;
         _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -85,12 +87,10 @@ const float zoom = 15.0f;
         CLLocationCoordinate2D locationCoordinates;
         locationCoordinates.latitude = restaurant.latitude;
         locationCoordinates.longitude = restaurant.longitude;
-        
         if (isFirstLocation) {
             [self setCameraForFirstRestaurant:restaurant.latitude withLongitude:restaurant.longitude];
             isFirstLocation = NO;
         }
-        
         [self prepareMarkersForPlacement:locationCoordinates withRestaurantName:restaurant.restaurantName];
     }
 }
@@ -100,6 +100,7 @@ const float zoom = 15.0f;
     marker.position = location;
     marker.title = restaurantName;
     marker.map = _mapView;
+    [self.mapView setSelectedMarker:marker];
 }
 
 - (void)setCameraForFirstRestaurant:(double)latitude withLongitude:(double)longitude {
@@ -117,7 +118,15 @@ const float zoom = 15.0f;
     _mapView.camera = camera;
 }
 
-- (IBAction)backNavigationButtonPressed:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+- (BOOL)mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker {
+    
+   
+    return YES;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+}
+
+
 @end

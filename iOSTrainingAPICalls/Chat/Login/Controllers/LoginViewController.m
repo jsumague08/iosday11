@@ -25,10 +25,21 @@
 }
 
 - (void) didTapProceedButton {
+    [AppSettings.shared setUsername:self.loginView.userNameTextField.text];
     [[FIRAuth auth] signInAnonymouslyWithCompletion:^(FIRAuthDataResult * _Nullable authResult, NSError * _Nullable error) {
-        [AppSettings.shared setUsername:self.loginView.userNameTextField.text];
-        [self performSegueWithIdentifier:@"LoginToChannelSegueIdentifier" sender:self];
+        if (error != nil) {
+            NSLog(@"Error Signing In");
+            return;
+        }
+        [self performSegueWithIdentifier:@"LoginToChannelSegueIdentifier" sender:[authResult user]];
     }];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"LoginToChannelSegueIdentifier"]) {
+        ChannelViewController *channelViewController = [segue destinationViewController];
+        channelViewController.user = sender;
+    }
 }
 
 @end
