@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *homeCellLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *categoryImage;
 
 @end
 

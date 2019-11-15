@@ -37,6 +37,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     [self setUpDelegates];
     [self setUp];
 }
@@ -134,22 +135,24 @@
     JSQMessagesAvatarImageFactory *factory = [[JSQMessagesAvatarImageFactory alloc] init];
     Message *msg = self.messages[indexPath.row];
     
-    NSString *initial = @"Puwit";
+    NSString *initial = @"😀";
     if (![msg.senderDisplayName isEqualToString:@""]) {
         initial = [[msg.senderDisplayName substringFromIndex:1] capitalizedString];
     }
     
-    return [factory avatarImageWithUserInitials:initial backgroundColor:UIColor.redColor textColor:UIColor.blackColor font:[UIFont systemFontOfSize:14.f]];
+    return [factory avatarImageWithUserInitials:initial backgroundColor:UIColor.lightGrayColor textColor:UIColor.blackColor font:[UIFont systemFontOfSize:14.f]];
 }
 
 - (id<JSQMessageBubbleImageDataSource>)collectionView:(JSQMessagesCollectionView *)collectionView messageBubbleImageDataForItemAtIndexPath:(NSIndexPath *)indexPath {
     JSQMessagesBubbleImageFactory *factory = [[JSQMessagesBubbleImageFactory alloc] init];
-    
+    UIColor *bubbleColor = [[UIColor alloc]init];
     Message *msg = self.messages[indexPath.row];
     if ([self.senderId isEqualToString:msg.senderId]) {
-        return [factory outgoingMessagesBubbleImageWithColor:UIColor.lightGrayColor];
+        bubbleColor = [UIColor colorWithRed:239/255.0 green:133/255.0 blue:65/255.0 alpha:1];
+        return [factory outgoingMessagesBubbleImageWithColor:bubbleColor];
     }
-    return [factory incomingMessagesBubbleImageWithColor:UIColor.lightGrayColor];
+    bubbleColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
+    return [factory incomingMessagesBubbleImageWithColor:bubbleColor];
 }
 
 - (NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath {

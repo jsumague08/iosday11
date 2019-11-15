@@ -30,6 +30,9 @@
 		5BCE2703237C3C1C0012FE78 /* MapPopOverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE2702237C3C1C0012FE78 /* MapPopOverViewController.m */; };
 		5BCE2706237C3C330012FE78 /* MapPopOver.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE2705237C3C330012FE78 /* MapPopOver.m */; };
 		5BCE2708237C3C3C0012FE78 /* MapPopOver.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BCE2707237C3C3C0012FE78 /* MapPopOver.xib */; };
+		5BCE270B237DD48D0012FE78 /* TabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BCE270A237DD48D0012FE78 /* TabbarViewController.m */; };
+		5BCE270E237DDD780012FE78 /* LemonMilklightitalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BCE270D237DDD780012FE78 /* LemonMilklightitalic.otf */; };
+		5BCE2710237E47440012FE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BCE270F237E47430012FE78 /* Assets.xcassets */; };
 		6227F588C89F5FDF272DAB8D /* Pods_iOSTrainingAPICalls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D8D25CC8F6F802528A947D4 /* Pods_iOSTrainingAPICalls.framework */; };
 		A7046E67237518AF0016B2C4 /* HomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7046E66237518AF0016B2C4 /* HomeView.m */; };
 		A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7046E69237518D00016B2C4 /* HomeView.xib */; };
@@ -49,7 +52,6 @@
 		A7F678C7237515A000425CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F678C6237515A000425CC7 /* AppDelegate.m */; };
 		A7F678CD237515A000425CC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F678CB237515A000425CC7 /* Main.storyboard */; };
 		A7F678D0237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A7F678CE237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld */; };
-		A7F678D2237515A100425CC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7F678D1237515A100425CC7 /* Assets.xcassets */; };
 		A7F678D5237515A100425CC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7F678D3237515A100425CC7 /* LaunchScreen.storyboard */; };
 		A7F678D8237515A100425CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F678D7237515A100425CC7 /* main.m */; };
 		A7F678E2237515A100425CC7 /* iOSTrainingAPICallsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A7F678E1237515A100425CC7 /* iOSTrainingAPICallsTests.m */; };
@@ -115,6 +117,10 @@
 		5BCE2704237C3C330012FE78 /* MapPopOver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPopOver.h; sourceTree = "<group>"; };
 		5BCE2705237C3C330012FE78 /* MapPopOver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPopOver.m; sourceTree = "<group>"; };
 		5BCE2707237C3C3C0012FE78 /* MapPopOver.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapPopOver.xib; sourceTree = "<group>"; };
+		5BCE2709237DD48D0012FE78 /* TabbarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabbarViewController.h; sourceTree = "<group>"; };
+		5BCE270A237DD48D0012FE78 /* TabbarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabbarViewController.m; sourceTree = "<group>"; };
+		5BCE270D237DDD780012FE78 /* LemonMilklightitalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LemonMilklightitalic.otf; sourceTree = "<group>"; };
+		5BCE270F237E47430012FE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7046E65237518AF0016B2C4 /* HomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeView.h; sourceTree = "<group>"; };
 		A7046E66237518AF0016B2C4 /* HomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeView.m; sourceTree = "<group>"; };
 		A7046E69237518D00016B2C4 /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
@@ -145,7 +151,6 @@
 		A7F678C6237515A000425CC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A7F678CC237515A000425CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7F678CF237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSTrainingAPICalls.xcdatamodel; sourceTree = "<group>"; };
-		A7F678D1237515A100425CC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7F678D4237515A100425CC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A7F678D6237515A100425CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7F678D7237515A100425CC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -238,11 +243,12 @@
 		5B0DBFC4237A7D4B00384691 /* Restaurant */ = {
 			isa = PBXGroup;
 			children = (
+				A7046E912376A8750016B2C4 /* RestaurantDetails */,
+				A7F678CB237515A000425CC7 /* Main.storyboard */,
 				5BCE26FD237C3B970012FE78 /* MapPopover */,
 				5B09F1AD237941CA00A5646E /* Map */,
 				A7046E61237518700016B2C4 /* Home */,
 				A7046E77237671B80016B2C4 /* Restaurants */,
-				A7046E912376A8750016B2C4 /* RestaurantDetails */,
 			);
 			path = Restaurant;
 			sourceTree = "<group>";
@@ -391,7 +397,6 @@
 		5BCE26FD237C3B970012FE78 /* MapPopover */ = {
 			isa = PBXGroup;
 			children = (
-				A7F678CB237515A000425CC7 /* Main.storyboard */,
 				5BCE2700237C3BB30012FE78 /* Model */,
 				5BCE26FF237C3BAE0012FE78 /* View */,
 				5BCE26FE237C3BA60012FE78 /* Controller */,
@@ -423,6 +428,14 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		5BCE270C237DDD310012FE78 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5BCE270D237DDD780012FE78 /* LemonMilklightitalic.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		66DEB08EFFB1126E58475D87 /* Pods */ = {
@@ -589,18 +602,21 @@
 		A7F678C4237515A000425CC7 /* iOSTrainingAPICalls */ = {
 			isa = PBXGroup;
 			children = (
+				5BCE270C237DDD310012FE78 /* Fonts */,
 				5B0DBFDD237A91DE00384691 /* Utility */,
 				5B0DBFC5237A7D7900384691 /* Chat */,
 				5B0DBFC4237A7D4B00384691 /* Restaurant */,
 				5B0DBFC0237A5DCB00384691 /* iOSTrainingAPICalls.entitlements */,
 				A7F678C5237515A000425CC7 /* AppDelegate.h */,
 				A7F678C6237515A000425CC7 /* AppDelegate.m */,
-				A7F678D1237515A100425CC7 /* Assets.xcassets */,
 				5B0DBFDB237A895000384691 /* TabViewStoryboard.storyboard */,
+				5BCE2709237DD48D0012FE78 /* TabbarViewController.h */,
+				5BCE270A237DD48D0012FE78 /* TabbarViewController.m */,
 				A7F678D3237515A100425CC7 /* LaunchScreen.storyboard */,
 				A7F678D6237515A100425CC7 /* Info.plist */,
 				5BCE26FB237C34D40012FE78 /* GoogleService-Info.plist */,
 				A7F678D7237515A100425CC7 /* main.m */,
+				5BCE270F237E47430012FE78 /* Assets.xcassets */,
 				A7F678CE237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld */,
 			);
 			path = iOSTrainingAPICalls;
@@ -740,12 +756,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B0DBFE7237AA32B00384691 /* ChannelView.xib in Resources */,
+				5BCE270E237DDD780012FE78 /* LemonMilklightitalic.otf in Resources */,
 				5B09F1BD2379457900A5646E /* MapView.xib in Resources */,
 				A7F678D5237515A100425CC7 /* LaunchScreen.storyboard in Resources */,
 				5B0DBFD5237A810D00384691 /* LoginView.xib in Resources */,
 				A7046E6A237518D00016B2C4 /* HomeView.xib in Resources */,
+				5BCE2710237E47440012FE78 /* Assets.xcassets in Resources */,
 				5B0DBFF2237BD74400384691 /* ChannelTableViewCell.xib in Resources */,
-				A7F678D2237515A100425CC7 /* Assets.xcassets in Resources */,
 				A7046E7323751AB00016B2C4 /* HomeTableViewCell.xib in Resources */,
 				A7046E9B2376A9D40016B2C4 /* RestaurantDetailsView.xib in Resources */,
 				5BCE2708237C3C3C0012FE78 /* MapPopOver.xib in Resources */,
@@ -918,6 +935,7 @@
 			files = (
 				A7F678D0237515A000425CC7 /* iOSTrainingAPICalls.xcdatamodeld in Sources */,
 				5B0DBFEE237B9CC700384691 /* Channel.m in Sources */,
+				5BCE270B237DD48D0012FE78 /* TabbarViewController.m in Sources */,
 				A7046E802376729F0016B2C4 /* RestaurantsView.m in Sources */,
 				5B0DBFE1237A932800384691 /* AppSettings.m in Sources */,
 				A7046E7D2376723D0016B2C4 /* RestaurantsViewController.m in Sources */,

@@ -14,6 +14,8 @@
         <scene sceneID="0MS-uw-E1p">
             <objects>
                 <navigationController id="30g-yb-F1s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="icn_chat" id="C5N-zV-bhA"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yZz-FG-7MA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -24,9 +26,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XLP-cx-fSs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-887" y="96"/>
+            <point key="canvasLocation" x="-888" y="137"/>
         </scene>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="hL4-O0-6Eg">
             <objects>
                 <viewController id="c9C-cO-YqA" customClass="LoginViewController" sceneMemberID="viewController">
@@ -36,7 +38,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="U6x-5J-Jze"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AIJ-cY-czZ"/>
+                    <navigationItem key="navigationItem" title="Login" id="4bK-FD-G77"/>
                     <connections>
                         <segue destination="99m-Md-Lzu" kind="show" identifier="LoginToChannelSegueIdentifier" id="G5l-jl-SJx"/>
                     </connections>
@@ -68,4 +70,7 @@
             <point key="canvasLocation" x="839" y="137"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icn_chat" width="30" height="26"/>
+    </resources>
 </document>

@@ -24,6 +24,11 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>TabViewStoryboard</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>LemonMilklightitalic.otf</string>
+		<string></string>
+	</array>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -18,7 +18,7 @@
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="EUJ-6l-mY7">
                     <rect key="frame" x="16" y="20" width="343" height="647"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.92157477139999999" green="0.92155748609999999" blue="0.92156928780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jNG-Wi-QnU">
                         <size key="itemSize" width="50" height="50"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -31,7 +31,7 @@
                     <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </activityIndicatorView>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.92157477139999999" green="0.92155748609999999" blue="0.92156928780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="Ifq-D3-TqK" firstAttribute="trailing" secondItem="EUJ-6l-mY7" secondAttribute="trailing" constant="16" id="3PE-IV-qyR"/>
                 <constraint firstItem="EUJ-6l-mY7" firstAttribute="leading" secondItem="Ifq-D3-TqK" secondAttribute="leading" constant="16" id="NTy-PP-mME"/>

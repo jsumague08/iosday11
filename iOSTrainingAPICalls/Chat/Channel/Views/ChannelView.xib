@@ -16,34 +16,52 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-cn-cct">
-                    <rect key="frame" x="104" y="100" width="290" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-Tp-B7f">
-                    <rect key="frame" x="20" y="100" width="76" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3OT-MV-xsc">
-                    <rect key="frame" x="0.0" y="129" width="414" height="733"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3OT-MV-xsc">
+                    <rect key="frame" x="12" y="110" width="387" height="752"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </tableView>
-                <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fo0-xE-aKu">
-                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Title" id="M0F-Ar-iDe"/>
-                    </items>
-                </navigationBar>
+                <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fO6-rw-h6f">
+                    <rect key="frame" x="0.0" y="44" width="414" height="55"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEg-cn-cct">
+                            <rect key="frame" x="107" y="19" width="283" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                            <color key="shadowColor" red="0.92157477139999999" green="0.92155748609999999" blue="0.92156928780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hnt-Tp-B7f">
+                            <rect key="frame" x="8" y="16" width="91" height="24"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88783193005181349" green="0.4045281497062429" blue="0.28250722963537761" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="hnt-Tp-B7f" firstAttribute="leading" secondItem="fO6-rw-h6f" secondAttribute="leading" constant="8" id="0hu-Tb-0bD"/>
+                        <constraint firstAttribute="bottom" secondItem="DEg-cn-cct" secondAttribute="bottom" constant="15" id="B1T-JO-4pf"/>
+                        <constraint firstAttribute="bottom" secondItem="hnt-Tp-B7f" secondAttribute="bottom" constant="15" id="fsB-bv-04i"/>
+                        <constraint firstAttribute="trailing" secondItem="DEg-cn-cct" secondAttribute="trailing" constant="24" id="g1c-vu-ajX"/>
+                        <constraint firstItem="DEg-cn-cct" firstAttribute="top" secondItem="fO6-rw-h6f" secondAttribute="top" constant="19" id="gze-N5-DTR"/>
+                        <constraint firstItem="hnt-Tp-B7f" firstAttribute="top" secondItem="fO6-rw-h6f" secondAttribute="top" constant="16" id="mCp-65-lW8"/>
+                        <constraint firstItem="DEg-cn-cct" firstAttribute="leading" secondItem="hnt-Tp-B7f" secondAttribute="trailing" constant="8" id="wNX-5h-n01"/>
+                    </constraints>
+                </view>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.92157477139999999" green="0.92155748609999999" blue="0.92156928780000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fO6-rw-h6f" firstAttribute="leading" secondItem="FmX-at-Wxl" secondAttribute="leading" id="Ggc-rH-00K"/>
+                <constraint firstItem="fO6-rw-h6f" firstAttribute="top" secondItem="7Q9-1i-mSN" secondAttribute="top" id="HNg-fO-qFR"/>
+                <constraint firstItem="3OT-MV-xsc" firstAttribute="top" secondItem="fO6-rw-h6f" secondAttribute="bottom" constant="11" id="I6r-RV-3Zy"/>
+                <constraint firstItem="7Q9-1i-mSN" firstAttribute="trailing" secondItem="fO6-rw-h6f" secondAttribute="trailing" id="Irz-25-nok"/>
+                <constraint firstAttribute="trailing" secondItem="fO6-rw-h6f" secondAttribute="trailing" id="MV8-wD-Cja"/>
+                <constraint firstItem="3OT-MV-xsc" firstAttribute="top" secondItem="7Q9-1i-mSN" secondAttribute="top" constant="66" id="SZ3-RE-fde"/>
+                <constraint firstItem="7Q9-1i-mSN" firstAttribute="bottom" secondItem="3OT-MV-xsc" secondAttribute="bottom" id="W3E-ue-BPk"/>
+                <constraint firstItem="3OT-MV-xsc" firstAttribute="leading" secondItem="7Q9-1i-mSN" secondAttribute="leading" constant="12" id="gi4-3J-EnU"/>
+                <constraint firstItem="fO6-rw-h6f" firstAttribute="leading" secondItem="7Q9-1i-mSN" secondAttribute="leading" id="i3H-ed-xqf"/>
+                <constraint firstItem="7Q9-1i-mSN" firstAttribute="trailing" secondItem="3OT-MV-xsc" secondAttribute="trailing" constant="15" id="xD5-Dx-aCo"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="7Q9-1i-mSN"/>
             <connections>
                 <outlet property="channelTableView" destination="3OT-MV-xsc" id="rwf-Qi-9zI"/>

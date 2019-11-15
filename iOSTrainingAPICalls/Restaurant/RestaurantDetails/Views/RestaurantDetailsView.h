@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GoogleMaps/GoogleMaps.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *restaurantAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *restaurantTiming;
 @property (weak, nonatomic) IBOutlet UILabel *averageCostForTwoLabel;
+@property (weak, nonatomic) IBOutlet UIView *titleAndRatingView;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UIView *miniMapView;
+
+//@property (weak, nonatomic) IBOutlet GMSMapView *map;
+
 
 @end
 

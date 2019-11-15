@@ -12,6 +12,7 @@
 #import "../../Restaurants/Models/Restaurants.h"
 #import "../../MapPopover/View/MapPopOver.h"
 #import "../../MapPopover/Controller/MapPopOverViewController.h"
+#import "../../../Restaurant/RestaurantDetails/Controllers/RestaurantDetailsViewController.h"
 
 
 NS_ASSUME_NONNULL_BEGIN

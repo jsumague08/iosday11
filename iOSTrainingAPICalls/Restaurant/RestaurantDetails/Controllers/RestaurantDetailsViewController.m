@@ -21,10 +21,18 @@
     self.restaurantsDetailsView.frame = self.view.bounds;
     self.restaurantsDetailsView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |
     UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    self.restaurantsDetailsView.titleAndRatingView.layer.borderWidth = 0.5;
+    self.restaurantsDetailsView.distanceLabel.text = [self calculateDistanceFromCurrentLocation];
+    
+    self.restaurantsDetailsView.miniMapView.layer.shadowOffset = CGSizeMake(3, 3);
+    self.restaurantsDetailsView.miniMapView.layer.shadowOpacity = 0.3f;
+    
     [self.view addSubview:self.restaurantsDetailsView];
     self.navigationItem.title = @"Restaurant";
     [self getRestaurant];
 }
+
+
 
 - (void)getRestaurant {self.restaurantsDetailsView.restaurantNameLabel.text = self.restaurant.restaurantName;
     self.restaurantsDetailsView.restaurantCuisineLabel.text = self.restaurant.restaurantCuisines;
@@ -44,4 +52,29 @@
     }
 }
 
+
+- (NSString *)calculateDistanceFromCurrentLocation {
+    CLLocation *restaurantLocation = [[CLLocation alloc] initWithLatitude:self.restaurant.latitude longitude:self.restaurant.longitude];
+    
+    CLLocation *simulatedCurrentLocation = [[CLLocation alloc] initWithLatitude:14.219866 longitude:121.037037];
+    
+    CLLocationDistance distance = [restaurantLocation distanceFromLocation:simulatedCurrentLocation] / 1000;
+    
+    NSString *distanceInString = [NSString stringWithFormat:@"%.02fKM", distance];
+    
+    return distanceInString;
+}
+
+//- (void)setUpMarkersWithRestaurantData {
+//    BOOL isFirstLocation = YES;
+//        CLLocationCoordinate2D locationCoordinates;
+//        locationCoordinates.latitude = restaurant.latitude;
+//        locationCoordinates.longitude = restaurant.longitude;
+//        if (isFirstLocation) {
+//            [self setCameraForFirstRestaurant:restaurant.latitude withLongitude:restaurant.longitude];
+//            isFirstLocation = NO;
+//        }
+//        [self prepareMarkersForPlacement:locationCoordinates withRestaurantName:restaurant.restaurantName];
+//    }
+//}
 @end

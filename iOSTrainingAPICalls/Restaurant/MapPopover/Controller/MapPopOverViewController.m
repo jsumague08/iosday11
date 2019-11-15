@@ -17,11 +17,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.mapPopOverView = (MapPopOver *)[[[NSBundle mainBundle] loadNibNamed:@"MapPopOver" owner:self options:nil] objectAtIndex:0];
-    self.mapPopOverView.frame = self.view.bounds;
-    self.mapPopOverView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |
-    UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-    [self.view addSubview:self.mapPopOverView];
+//    self.popover = (MapPopOver *)[[[NSBundle mainBundle] loadNibNamed:@"MapPopOver" owner:self options:nil] objectAtIndex:0];
+//    self.popover.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |
+//    UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+//    [self.view addSubview:self.popover];
 }
 
 @end

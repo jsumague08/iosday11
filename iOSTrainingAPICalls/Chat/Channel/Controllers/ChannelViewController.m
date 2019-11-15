@@ -25,6 +25,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.channelView = (ChannelView *)[[[NSBundle mainBundle] loadNibNamed:@"ChannelView" owner:self options:nil]objectAtIndex:0];
+    self.channelView.frame = self.view.bounds;
+    self.channelView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |
+    UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
     [self setDelegates];
     self.channelsArray = [[NSMutableArray alloc] init];
     self.channelView.userLabel.text = [AppSettings.shared getUsername];
@@ -96,12 +99,13 @@
     NSString *channelName = textField.text;
     Channel *channel = [Channel initWithChannelName:channelName];
     [self.channelCollectionReference addDocumentWithData:[channel presentation] completion:^(NSError * _Nullable error) {
-        NSString *message = @"Success boss";
+        NSString *message = @"Successfully Added New Channel.";
         if (error) {
-            message = [NSString stringWithFormat:@"Awit. Failed to add Channel: %@",error.localizedDescription];
+            message = [NSString stringWithFormat:@"Failed to add Channel: %@",error.localizedDescription];
         }
         [channelViewController showAlertWithMessage:message];
     }];
+    
 }
 
 - (IBAction)didPressAddButton:(id)sender {
@@ -198,8 +202,11 @@
         [[self navigationController] showViewController:vc sender:nil];
     }
     else {
-        [self presentViewController:vc animated:YES completion:nil];
+//        [self presentViewController:vc animated:YES completion:nil];
+    
+        [self showViewController:vc sender:nil];
     }
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 

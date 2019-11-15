@@ -78,6 +78,19 @@
     }];
 }
 
+- (UIEdgeInsets)collectionView:
+(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(10,10,10,10);
+}
+
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section {
+    return 2.0;
+}
+
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section {
+    return 20.0;
+}
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     RestaurantViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"restaurantCell" forIndexPath:indexPath];
     Restaurants *restaurant = self.restaurants[indexPath.row];
@@ -100,6 +113,11 @@
             });
         }
     });
+    cell.layer.shadowOffset = CGSizeMake(3,3);
+    cell.layer.masksToBounds = NO;
+    cell.layer.shadowOpacity = 0.4f;
+    cell.containerView.layer.cornerRadius = 10;
+    cell.containerView.layer.masksToBounds = YES;
     return cell;
 }
 
@@ -111,8 +129,8 @@
     CGRect screenBound  = [[UIScreen mainScreen] bounds];
     CGSize screenSize = screenBound.size;
     
-    CGFloat computedHeight = screenSize.height / 3;
-    CGFloat computedWidth = screenSize.width / 4;
+    CGFloat computedHeight = screenSize.height / 3.5;
+    CGFloat computedWidth = screenSize.width / 2.5;
     if (screenSize.height < screenSize.width) {
         computedHeight = screenSize.height;
         computedWidth = screenSize.width / 4;

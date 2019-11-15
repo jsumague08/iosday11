@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i8Q-6P-0CX">
-                    <rect key="frame" x="16" y="20" width="343" height="647"/>
+                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                 </tableView>
@@ -32,8 +32,8 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="i8Q-6P-0CX" firstAttribute="leading" secondItem="uDb-AB-3hg" secondAttribute="leading" constant="16" id="3y4-ns-ns2"/>
-                <constraint firstItem="uDb-AB-3hg" firstAttribute="trailing" secondItem="i8Q-6P-0CX" secondAttribute="trailing" constant="16" id="A46-LT-9Qb"/>
+                <constraint firstItem="i8Q-6P-0CX" firstAttribute="leading" secondItem="uDb-AB-3hg" secondAttribute="leading" id="3y4-ns-ns2"/>
+                <constraint firstItem="uDb-AB-3hg" firstAttribute="trailing" secondItem="i8Q-6P-0CX" secondAttribute="trailing" id="A46-LT-9Qb"/>
                 <constraint firstItem="uDb-AB-3hg" firstAttribute="bottom" secondItem="i8Q-6P-0CX" secondAttribute="bottom" id="p5D-Ho-kuo"/>
                 <constraint firstItem="MoD-Ri-Jya" firstAttribute="centerX" secondItem="uDb-AB-3hg" secondAttribute="centerX" id="skX-CG-Usd"/>
                 <constraint firstItem="i8Q-6P-0CX" firstAttribute="top" secondItem="uDb-AB-3hg" secondAttribute="top" id="tu5-6v-cMb"/>

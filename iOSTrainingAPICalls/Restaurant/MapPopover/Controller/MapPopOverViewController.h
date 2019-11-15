@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface MapPopOverViewController : UIViewController
 
 @property (strong, nonatomic) MapPopOver *mapPopOverView;
+@property (weak, nonatomic) IBOutlet MapPopOver *popover;
 
 @end
 

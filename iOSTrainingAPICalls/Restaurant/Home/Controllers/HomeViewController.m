@@ -12,6 +12,7 @@
 
 @interface HomeViewController ()
 
+@property (strong, nonatomic)  NSMutableArray *categoriesArray;
 @end
 
 @implementation HomeViewController
@@ -34,6 +35,7 @@
     NSString *categoriesUrl = @"https://developers.zomato.com/api/v2.1/categories";
     NSString *apiKey = @"9255d38e382f43e03af2ce0c42737385";
     NSDictionary *parameters = @{@"res-id" : @"216"};
+    self.categoriesArray = [[NSMutableArray alloc] init];
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
@@ -49,6 +51,7 @@
                                         categoryId:[responseCategory[@"id"] intValue]
                                         name:responseCategory[@"name"]];
             [self.categories addObject:category];
+            [self.categoriesArray addObject:category.name];
         }
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.homeView.homeTableView reloadData];
@@ -67,6 +70,7 @@
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"homeCell"];
     Categories *category = self.categories[indexPath.row];
     cell.homeCellLabel.text = category.name;
+    cell.categoryImage.image = [UIImage imageNamed:self.categoriesArray[indexPath.row]];
     return cell;
 }
 
@@ -83,5 +87,7 @@
         restaurantsVc.categoryId = self.categoryId;
     }
 }
+
+
 
 @end

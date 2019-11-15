@@ -13,6 +13,8 @@ const float zoom = 15.0f;
 
 @interface MapViewController ()
 
+@property (strong, nonatomic) Restaurants *selectedRestaurant;
+
 @end
 
 @implementation MapViewController
@@ -22,7 +24,6 @@ const float zoom = 15.0f;
     self.mapView = (MapView *)[[[NSBundle mainBundle] loadNibNamed:@"MapView" owner:self options:nil] objectAtIndex:0];
     self.mapView.frame = self.view.bounds;
     self.mapView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
-    
     
     [self.view addSubview:self.mapView];
     
@@ -119,13 +120,27 @@ const float zoom = 15.0f;
 }
 
 - (BOOL)mapView:(GMSMapView *)mapView didTapMarker:(GMSMarker *)marker {
+    self.selectedRestaurant = [self selectRestaurantDetailsFromArray:marker.title];
+    [self performSegueWithIdentifier:@"mapToDetailSegueIdentifier" sender:self];
     
-   
     return YES;
 }
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (Restaurants *)selectRestaurantDetailsFromArray:(NSString *)restaurantTitle {
     
+    for (Restaurants *restaurant in self.arrayOfRestaurants) {
+        if ([restaurantTitle isEqualToString:restaurant.restaurantName]) {
+            return restaurant;
+        }
+    }
+    return nil;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"mapToDetailSegueIdentifier"]) {
+        RestaurantDetailsViewController *restaurantDetailsViewController = [segue destinationViewController];
+        restaurantDetailsViewController.restaurant = self.selectedRestaurant;
+    }
 }
 
 

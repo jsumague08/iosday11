@@ -10,13 +10,61 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSTrainingAPICalls/Chat/Message/Controllers/MessageViewController.m"
-            timestampString = "595414730.606553"
+            timestampString = "595478917.432613"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
             landmarkName = "-collectionView:attributedTextForMessageBubbleTopLabelAtIndexPath:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iOSTrainingAPICalls/Restaurant/Home/Controllers/HomeViewController.m"
+            timestampString = "595478917.432976"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "-getCategories"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35-[HomeViewController getCategories]_block_invoke"
+                  moduleName = "iOSTrainingAPICalls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/opsolutions/Desktop/MigsProjk/iOSTrainingAPICalls/Restaurant/Home/Controllers/HomeViewController.m"
+                  timestampString = "595473589.300958"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1031">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__35-[HomeViewController getCategories]_block_invoke"
+                  moduleName = "iOSTrainingAPICalls"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/opsolutions/Desktop/MigsProjk/iOSTrainingAPICalls/Restaurant/Home/Controllers/HomeViewController.m"
+                  timestampString = "595473589.303471"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1067">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
