@@ -8,6 +8,8 @@
 
 #import "RestaurantDetailsViewController.h"
 
+
+
 @interface RestaurantDetailsViewController ()
 
 @end
@@ -16,27 +18,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.restaurantsDetailsView = (RestaurantDetailsView *)[[[NSBundle mainBundle] loadNibNamed:@"RestaurantDetailsView" owner:self options:nil] objectAtIndex:0];
     self.restaurantsDetailsView.frame = self.view.bounds;
     self.restaurantsDetailsView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin |
     UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
-    self.restaurantsDetailsView.titleAndRatingView.layer.borderWidth = 0.5;
-    self.restaurantsDetailsView.distanceLabel.text = [self calculateDistanceFromCurrentLocation];
+    [self setupUIElementFormats];
     
-    self.restaurantsDetailsView.miniMapView.layer.shadowOffset = CGSizeMake(3, 3);
-    self.restaurantsDetailsView.miniMapView.layer.shadowOpacity = 0.3f;
-    
+    [self getRestaurant];
     [self.view addSubview:self.restaurantsDetailsView];
     self.navigationItem.title = @"Restaurant";
-    [self getRestaurant];
+    [self checkLocationAccess];
+    [self setupMap];
+    [self startLocationService];
 }
 
+- (void)setupUIElementFormats {
+    self.restaurantsDetailsView.titleAndRatingView.layer.borderWidth = 0.5;
+    self.restaurantsDetailsView.distanceLabel.text = [self calculateDistanceFromCurrentLocation];
+    self.restaurantsDetailsView.mapContainerView.layer.shadowOffset = CGSizeMake(3, 3);
+    self.restaurantsDetailsView.mapContainerView.layer.shadowOpacity = 0.3f;
+}
 
-
-- (void)getRestaurant {self.restaurantsDetailsView.restaurantNameLabel.text = self.restaurant.restaurantName;
+- (void)getRestaurant {
+    self.restaurantsDetailsView.restaurantNameLabel.text = self.restaurant.restaurantName;
     self.restaurantsDetailsView.restaurantCuisineLabel.text = self.restaurant.restaurantCuisines;
-    self.restaurantsDetailsView.restaurantRatingLabel.text = [NSString stringWithFormat:@"%.02f", self.restaurant.restaurantUserRating];
+    self.restaurantsDetailsView.restaurantRatingLabel.text = [NSString stringWithFormat:@"%.01f", self.restaurant.restaurantUserRating];
     self.restaurantsDetailsView.restaurantAddressLabel.text = self.restaurant.restaurantLocation;
     self.restaurantsDetailsView.restaurantTiming.text = self.restaurant.restaurantTiming;
     self.restaurantsDetailsView.averageCostForTwoLabel.text = [NSString stringWithFormat:@"%.02f", self.restaurant.restaurantAverageCostForTwo];
@@ -52,6 +58,89 @@
     }
 }
 
+- (void)startLocationService {
+    if (_locationManager == nil) {
+        _locationManager = [[CLLocationManager alloc] init];
+        _locationManager.delegate = self;
+        _locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+        [_locationManager startUpdatingLocation];
+    }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    switch (status) {
+        case kCLAuthorizationStatusDenied:
+            NSLog(@"Denied");
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            NSLog(@"In use");
+        case kCLAuthorizationStatusRestricted:
+            NSLog(@"Restricted");
+        case kCLAuthorizationStatusAuthorizedAlways:
+            NSLog(@"Auth Always");
+        case kCLAuthorizationStatusNotDetermined:
+            NSLog(@"Not Determined");
+            break;
+    }
+}
+
+- (void)prepareMarkersForPlacement:(CLLocationCoordinate2D)location withRestaurantName:(NSString *)restaurantName {
+    GMSMarker *marker = [[GMSMarker alloc] init];
+    marker.position = location;
+    marker.title = restaurantName;
+    marker.map = self.restaurantsDetailsView.miniMapView;
+    [self.restaurantsDetailsView.miniMapView setSelectedMarker:marker];
+}
+
+- (void)setCameraForFirstRestaurant:(double)latitude withLongitude:(double)longitude {
+    CLLocation *firstLocation = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
+    
+    float zoom = 17.0f;
+    
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:latitude longitude:longitude zoom:zoom];
+    self.restaurantsDetailsView.miniMapView.camera = camera;
+    self.restaurantsDetailsView.miniMapView.myLocationEnabled = YES;
+    
+    [self centerToLocation:firstLocation];
+}
+
+- (void)centerToLocation:(CLLocation *)location {
+    float zoom = 17.0f;
+    GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:location.coordinate.latitude longitude:location.coordinate.longitude zoom:zoom];
+    self.restaurantsDetailsView.miniMapView.camera = camera;
+}
+
+- (void)setUpMarkersWithRestaurantData {
+    BOOL isFirstLocation = YES;
+        CLLocationCoordinate2D locationCoordinates;
+        locationCoordinates.latitude = self.restaurant.latitude;
+        locationCoordinates.longitude = self.restaurant.longitude;
+            [self setCameraForFirstRestaurant:self.restaurant.latitude withLongitude:self.restaurant.longitude];
+        [self prepareMarkersForPlacement:locationCoordinates withRestaurantName:self.restaurant.restaurantName];
+    
+}
+
+- (void)checkLocationAccess {
+    CLAuthorizationStatus status = [CLLocationManager authorizationStatus];
+    
+    switch (status) {
+        case kCLAuthorizationStatusDenied:
+            [_locationManager requestWhenInUseAuthorization];
+            break;
+        case kCLAuthorizationStatusRestricted:
+            break;
+        case kCLAuthorizationStatusNotDetermined:
+            [_locationManager requestWhenInUseAuthorization];
+            break;
+        case kCLAuthorizationStatusAuthorizedAlways:
+            break;
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            break;
+    }
+}
+
+- (void)setupMap {
+    [self setUpMarkersWithRestaurantData];
+}
 
 - (NSString *)calculateDistanceFromCurrentLocation {
     CLLocation *restaurantLocation = [[CLLocation alloc] initWithLatitude:self.restaurant.latitude longitude:self.restaurant.longitude];

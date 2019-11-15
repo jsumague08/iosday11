@@ -151,8 +151,7 @@
         bubbleColor = [UIColor colorWithRed:239/255.0 green:133/255.0 blue:65/255.0 alpha:1];
         return [factory outgoingMessagesBubbleImageWithColor:bubbleColor];
     }
-    bubbleColor = [UIColor colorWithRed:235/255.0 green:235/255.0 blue:235/255.0 alpha:1];
-    return [factory incomingMessagesBubbleImageWithColor:bubbleColor];
+    return [factory incomingMessagesBubbleImageWithColor:UIColor.darkGrayColor];
 }
 
 - (NSAttributedString *)collectionView:(JSQMessagesCollectionView *)collectionView attributedTextForMessageBubbleTopLabelAtIndexPath:(NSIndexPath *)indexPath {

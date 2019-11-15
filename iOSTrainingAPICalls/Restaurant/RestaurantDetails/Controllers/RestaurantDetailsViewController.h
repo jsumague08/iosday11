@@ -14,14 +14,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface RestaurantDetailsViewController : UIViewController
+@interface RestaurantDetailsViewController : UIViewController <CLLocationManagerDelegate, GMSMapViewDelegate>
 
-//@property (strong, nonatomic) CLLocationManager *locationManager;
-//@property (strong, nonatomic) GMSMarkerLayer *marker;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) GMSMarkerLayer *marker;
 
 @property (strong, nonatomic) RestaurantDetailsView *restaurantsDetailsView;
 @property (strong, readwrite) Restaurants *restaurant;
-//@property (strong, nonatomic) MapView *mapView;
 
 @end
 

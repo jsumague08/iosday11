@@ -71,6 +71,12 @@
     Categories *category = self.categories[indexPath.row];
     cell.homeCellLabel.text = category.name;
     cell.categoryImage.image = [UIImage imageNamed:self.categoriesArray[indexPath.row]];
+    cell.layer.cornerRadius = cell.layer.frame.size.height / 2;
+    
+    cell.frame = self.view.bounds;
+    cell.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin;
+    
+    
     return cell;
 }
 

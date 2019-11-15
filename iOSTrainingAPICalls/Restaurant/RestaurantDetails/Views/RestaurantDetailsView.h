@@ -21,10 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UILabel *averageCostForTwoLabel;
 @property (weak, nonatomic) IBOutlet UIView *titleAndRatingView;
 @property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
-@property (weak, nonatomic) IBOutlet UIView *miniMapView;
 
-//@property (weak, nonatomic) IBOutlet GMSMapView *map;
-
+@property (weak, nonatomic) IBOutlet GMSMapView *miniMapView;
+@property (weak, nonatomic) IBOutlet UIView *mapContainerView;
 
 @end
 
